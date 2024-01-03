@@ -51,7 +51,7 @@ chainlinkPassword
 
 # Join the community
 
-***tm link
+https://t.me/hpchain
 
 
 

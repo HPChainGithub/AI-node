@@ -1,13 +1,15 @@
 # ![image](https://github.com/HPChainGithub/node/assets/90428559/e990b2ac-0458-45f2-bbe4-2ffb0e2b9bbe) 
 # HPCHAIN - Decentralized physical infrastructure network (DePIN) 
 ------------------------------------------------------------------
+Welcome to HPCHAIN's official GitHub repo !
+
 HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to provide learners and developers with high quality and comprehensive computing resources.  
 
-For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper and website (https://www.hpchain.ai/)
+For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper on github and the website (https://www.hpchain.ai/)
 
 The current branch contains limited features and is under active development; the mainnet/main branch will be realised soon.
 
-Run with Docker
+To Run and HPCHAIN node, run with Docker
 
 # Requirements
 
@@ -50,12 +52,18 @@ chainlinkPassword
     You can locate your account address by clicking on the Configuration tab in the top right corner and locating the ACCOUNT_ADDRESS key variable.
     From here you should fund your address LINK and ETH. You can do that by copying your account address and going to the LINK ropsten faucet and ETH ropsten faucet.
 
-# Roadmap and contributing
+# Roadmap 
 
-HPCHAIN blockchain is currently based on Polygon - contributions are welcomed whether that means providing feedback, testing existing and new feature or hacking on the source.
+HPCHAIN blockchain is currently based on Polygon but with introducing improvements.
 
 HPCHAIN aims to introduce an innovative proof-of-holding (PoH) system. Users with HPCHAIN coins get various bonuses for sharing computational resources on the HPCHAIN platform.
 A neural network will be launched to set up MFP for new servers automatically.
+
+# Contributing
+
+If you have a reasonable understanding of blockchain technology you can of course contribute. 
+
+We expect every contributor to be respectful and constructive so that everyone has a positive experience, you can find out more in our code of conduct.
 
 # Join the community
 

@@ -1,9 +1,14 @@
 # ![image](https://github.com/HPChainGithub/node/assets/90428559/e990b2ac-0458-45f2-bbe4-2ffb0e2b9bbe) 
 # HPCHAIN - Decentralized physical infrastructure network (DePIN) 
 ------------------------------------------------------------------
+HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to connect  
+
+For a high-level overview of the HPchain protocol and tokenomics, check out the whitepaper; 
+The main branch contains new features and is under active development; the mainnet/main branch will be realised soon.
 
 Run with Docker
-Requirements
+
+# Requirements
 
     Install Docker
     Install Postgres
@@ -12,7 +17,7 @@ Requirements
         In the KEYS section you will see a list of different credentials. Under ENDPOINTS tab change the select to Ropsten.
         Underneath this you will have two links. Notice the wss://ropsten.infura.io/ws/v3/... link. You will need this in a second
 
-Running the Node
+# Running the Node
 
     Run cd run-node
 
@@ -43,4 +48,10 @@ chainlinkPassword
     Type in the credentials specified in your apicredentials.txt file and boom! You are logged into your locally running Chainlink node.
     You can locate your account address by clicking on the Configuration tab in the top right corner and locating the ACCOUNT_ADDRESS key variable.
     From here you should fund your address LINK and ETH. You can do that by copying your account address and going to the LINK ropsten faucet and ETH ropsten faucet.
+
+# Join the community
+
+***tm link
+
+
 

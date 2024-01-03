@@ -9,7 +9,7 @@ For a high-level overview of the HPchain platform, protocol and tokenomics, chec
 
 The current branch contains limited features and is under active development; the mainnet/main branch will be realised soon.
 
-To Run and HPCHAIN node, run with Docker
+To Run an HPCHAIN node, run with Docker
 
 # Requirements
 

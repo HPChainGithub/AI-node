@@ -53,6 +53,7 @@ chainlinkPassword
 # Roadmap and contributing
 
 HPCHAIN blockchain is currently based on Polygon - contributions are welcomed whether that means providing feedback, testing existing and new feature or hacking on the source.
+
 HPCHAIN aims to introduce an innovative proof-of-holding (PoH) system. Users with HPCHAIN coins get various bonuses for sharing computational resources on the HPCHAIN platform.
 A neural network will be launched to set up MFP for new servers automatically.
 

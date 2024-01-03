@@ -1,4 +1,4 @@
-# HPCHAIN
+# ![image](https://github.com/HPChainGithub/node/assets/90428559/e990b2ac-0458-45f2-bbe4-2ffb0e2b9bbe) HPCHAIN - Decentralized physical infrastructure network (DePIN) 
 
 Run with Docker
 Requirements

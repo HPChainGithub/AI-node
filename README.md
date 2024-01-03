@@ -3,7 +3,7 @@
 ------------------------------------------------------------------
 HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to connect  
 
-For a high-level overview of the HPchain protocol and tokenomics, check out the whitepaper; 
+For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper and website (https://www.hpchain.ai/); 
 The main branch contains new features and is under active development; the mainnet/main branch will be realised soon.
 
 Run with Docker

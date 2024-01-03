@@ -5,7 +5,7 @@ Welcome to HPCHAIN's official GitHub repo !
 
 HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to provide learners and developers with high quality and comprehensive computing resources.  
 
-For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper on github and the website (https://www.hpchain.ai/)
+For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper on this github repo and the website (https://www.hpchain.ai/)
 
 The current branch contains limited features and is under active development; the mainnet/main branch will be realised soon.
 

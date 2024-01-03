@@ -69,5 +69,9 @@ We expect every contributor to be respectful and constructive so that everyone h
 
 https://t.me/hpchain
 
+# License
+
+HPCHAIN is licenced under MIT
+
 
 

@@ -1,7 +1,7 @@
 # ![image](https://github.com/HPChainGithub/node/assets/90428559/e990b2ac-0458-45f2-bbe4-2ffb0e2b9bbe) 
 # HPCHAIN - Decentralized physical infrastructure network (DePIN) 
 ------------------------------------------------------------------
-HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to connect  
+HPCHAIN is a secure, suistainable and decentralized cloud computing platform aimed to provide developers with high quality and comprehensive computing resources.  
 
 For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper and website (https://www.hpchain.ai/)
 
@@ -49,6 +49,12 @@ chainlinkPassword
     Type in the credentials specified in your apicredentials.txt file and boom! You are logged into your locally running Chainlink node.
     You can locate your account address by clicking on the Configuration tab in the top right corner and locating the ACCOUNT_ADDRESS key variable.
     From here you should fund your address LINK and ETH. You can do that by copying your account address and going to the LINK ropsten faucet and ETH ropsten faucet.
+
+# Roadmap and contributing
+
+HPCHAIN blockchain is currently based on Polygon - contributions are welcomed whether that means providing feedback, testing existing and new feature or hacking on the source.
+HPCHAIN aims to introduce an innovative proof-of-holding (PoH) system. Users with HPCHAIN coins get various bonuses for sharing computational resources on the HPCHAIN platform.
+A neural network will be launched to set up MFP for new servers automatically.
 
 # Join the community
 

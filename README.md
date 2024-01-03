@@ -1,11 +1,11 @@
 # ![image](https://github.com/HPChainGithub/node/assets/90428559/e990b2ac-0458-45f2-bbe4-2ffb0e2b9bbe) 
 # HPCHAIN - Decentralized physical infrastructure network (DePIN) 
 ------------------------------------------------------------------
-HPCHAIN is a secure, suistainable and decentralized cloud computing platform aimed to provide developers with high quality and comprehensive computing resources.  
+HPCHAIN is a secure, suistainable and decentralized cloud computing marketplace aimed to provide learners and developers with high quality and comprehensive computing resources.  
 
 For a high-level overview of the HPchain platform, protocol and tokenomics, check out the whitepaper and website (https://www.hpchain.ai/)
 
-The main branch contains new features and is under active development; the mainnet/main branch will be realised soon.
+The current branch contains limited features and is under active development; the mainnet/main branch will be realised soon.
 
 Run with Docker
 

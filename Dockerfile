@@ -63,7 +63,6 @@ RUN apt-get update -y -q && \
     apt-get upgrade -y -q && \
     apt-get -y install curl &&\
     apt-get -y install gcc &&\
-    apt-get -y install gxx &&\
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
     echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" > /etc/apt/sources.list.d/coral-edgetpu.list && \
     apt-get update -y -q && \

@@ -9,7 +9,7 @@ For a high-level overview of the HPchain protocol and tokenomics, check out the 
 
 The current branch contains limited features and is under active development; the mainnet/main branch will be realised soon.
 
-To Run an own HPCHAIN node, run with Docker
+To Run your own HPCHAIN node, run with Docker
 
 ### Requirements
 

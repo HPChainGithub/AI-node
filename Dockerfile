@@ -8,8 +8,7 @@
 #     the "runtime" version of the Nvidia Cuda image
 #
 
-FROM nvidia/cuda:11.6.1-cudnn8-runtime-ubuntu20.04
-#FROM nvidia/cuda:12.3-cudnn8.1-runtime-ubuntu20.04
+FROM nvidia/cuda:12.0.1-cudnn8-runtime-ubuntu20.04
 
 # -----------------------------------------------------------------------------
 #                  Customize Configuration if needed

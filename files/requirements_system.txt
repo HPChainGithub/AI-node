@@ -51,10 +51,4 @@ python-pyglet
 python3-opengl
 #python-opengl
 
-# --- Coral TPU Edge ---
-python3-edgetpu
-edgetpu-examples
-edgetpu
-# Choose TPU Edge Performance mode
-libedgetpu1-std
-#libedgetpu1-max
+

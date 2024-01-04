@@ -49,11 +49,11 @@ EXPOSE 6006
 # -----------------------------------------------------------------------------
 #                Import the System configuration and assets files
 # -----------------------------------------------------------------------------
-ADD assets/.bashrc /home/$USER_NAME/
-ADD assets/.bash_profile /home/$USER_NAME/
-ADD assets/.profile /home/$USER_NAME/
-ADD assets/.screenrc /home/$USER_NAME/
-ADD requirements_system.txt /home/$USER_NAME
+ADD files/.bashrc /home/$USER_NAME/
+ADD files/.bash_profile /home/$USER_NAME/
+ADD files/.profile /home/$USER_NAME/
+ADD files/.screenrc /home/$USER_NAME/
+ADD files/requirements_system.txt /home/$USER_NAME
 
 
 # -----------------------------------------------------------------------------

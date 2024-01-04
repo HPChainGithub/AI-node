@@ -80,6 +80,7 @@ source .bashrc
 # Install RAPIDS from conda (not yet available from pypi repository)
 conda install -c rapidsai -c nvidia -c conda-forge -c defaults rapids=$RAPIDS_VERSION python=$PYTHON_VERSION cudatoolkit=$CUDA_TOOLKIT
 conda install nodejs
+conda install -c conda-forge pyglet
 
 # Install Python packages as defined in requirements.txt and constraints.txt
 pip install --ignore-installed -r requirements.txt -c constraints.txt

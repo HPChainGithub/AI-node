@@ -29,7 +29,7 @@ To Run your own HPCHAIN AI node, run with Docker
 
 2. Build the Image
    
-cd AI-node
+cd into directory
 
 ```
 docker build -t docker-hpchain.ai .

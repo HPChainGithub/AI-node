@@ -69,6 +69,8 @@ RUN apt-get update -y -q && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
     apt-get update -y -q && \
     apt-get -y install python3-pyglet && \
+    apt-get install -y nvidia-container-toolkit
+    apt-get update -y -q && \
     cat /home/$USER_NAME/requirements_system.txt | sed -e 's/#.*//g' | sed -e '/^$/d' | xargs apt-get -y install --fix-missing --fix-broken && \
     apt-get -q clean && \
     apt-get -q autoremove

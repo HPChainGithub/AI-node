@@ -13,12 +13,44 @@ To Run an own HPCHAIN node, run with Docker
 
 # Requirements
 
-    Install Docker
+    Install Docker https://docs.docker.com/get-docker/
+    
     Install Postgres
     Create an Infura account
         Click the Projects section and create a new project.
         In the KEYS section you will see a list of different credentials. Under ENDPOINTS tab change the select to Ropsten.
         Underneath this you will have two links. Notice the wss://ropsten.infura.io/ws/v3/... link. You will need this in a second
+
+### How to use
+
+1. Optional: Customize the Docker Image
+
+- `requirements.txt` (PIP packages list to install)
+
+2. Build the Image
+
+```
+docker build -t docker-hpchain.ai .
+
+3. launch a Docker container:
+
+```
+docker run --runtime=nvidia --rm -it -p 8888:8888 -p 6006:6006 -v <HOST_PERSISTENT_STORAGE_PATH>:/home/docker-ai/projects -u docker-hpchain.ai docker-hpchain.ai
+
+- (optional) 
+- `hpchain login & choose your account
+- `docker -- push {image_name}`
+
+# Apply Docker image on vm instance without Kubenetes (k8s)
+
+- ssh with external IP
+- `docker images`
+- `docker run --name docker-hpchain.ai --rm -d -p 80:80 docker-hpchain.ai
+
+# Apply Docker image on vm instance with Kubenetes (k8s)
+
+- TODO: https://github.com/phattv/sp-evisa/blob/master/k8s/kubenetes.md
+
 
 # Running the Node
 

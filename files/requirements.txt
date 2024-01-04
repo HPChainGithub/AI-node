@@ -65,9 +65,6 @@ gym
 box2d
 box2d-py
 
-# --- Coral TPU Edge ---
-https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp${PY}-cp${PY}m-linux_x86_64.whl
-
 # --- JAX ---
 https://storage.googleapis.com/jax-releases/${CUDA_VERSION}/jaxlib-${JAX_VERSION}-cp${PY}-none-linux_x86_64.whl
 jax

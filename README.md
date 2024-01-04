@@ -11,15 +11,13 @@ The current branch contains limited features and is under active development; th
 
 To Run an own HPCHAIN node, run with Docker
 
-# Requirements
-
-    Install Docker https://docs.docker.com/get-docker/
-    
-    Install Postgres
-    Create an Infura account
-        Click the Projects section and create a new project.
-        In the KEYS section you will see a list of different credentials. Under ENDPOINTS tab change the select to Ropsten.
-        Underneath this you will have two links. Notice the wss://ropsten.infura.io/ws/v3/... link. You will need this in a second
+#### Requirements
+- Install [Docker](https://docs.docker.com/get-docker/)
+- Install [Postgres](https://www.postgresql.org/)
+- Create an [Infura](https://infura.io/) account
+  - Click the `Projects` section and create a new project.
+  - In the `KEYS` section you will see a list of different credentials. Under `ENDPOINTS` tab change the select to `Ropsten`.
+  - Underneath this you will have two links. Notice the `wss://ropsten.infura.io/ws/v3/...` link. You will need this in a second
 
 ### How to use
 

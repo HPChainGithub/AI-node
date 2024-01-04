@@ -24,8 +24,8 @@ To Run your own HPCHAIN AI node, run with Docker
 
 1. Optional: Customize the Docker Image
 
-- `files/requirements.txt` (PIP packages list to install)
-- `files/requirements_system.txt` (APT packages list to install)
+- `files/requirements.txt` ("pip" packages list to install)
+- `files/requirements_system.txt` ("apt" packages list to install)
 
 2. Build the Image
    

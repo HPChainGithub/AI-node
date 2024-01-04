@@ -11,7 +11,8 @@ The current branch contains limited features and is under active development; th
 
 To Run an own HPCHAIN node, run with Docker
 
-#### Requirements
+### Requirements
+
 - Install [Docker](https://docs.docker.com/get-docker/)
 - Install [Postgres](https://www.postgresql.org/)
 - Create an [Infura](https://infura.io/) account

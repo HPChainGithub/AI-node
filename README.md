@@ -40,7 +40,7 @@ docker build -t docker-hpchain.ai .
 docker run --runtime=nvidia --rm -it -p 8888:8888 -p 6006:6006 -v <HOST_PERSISTENT_STORAGE_PATH>:/home/docker-ai/projects -u docker-hpchain.ai docker-hpchain.ai
 ```
 - (optional) 
-- `hpchain login & choose your account
+-  hpchain login & choose your account
 - `docker -- push {image_name}`
 
 # Apply Docker image on vm instance without Kubenetes (k8s)

@@ -31,6 +31,8 @@ To Run an own HPCHAIN node, run with Docker
 ```
 docker build -t docker-hpchain.ai .
 
+```
+
 3. launch a Docker container:
 
 ```

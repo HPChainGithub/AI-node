@@ -49,7 +49,11 @@ docker run --runtime=nvidia --rm -it -p 8888:8888 -p 6006:6006 -v <HOST_PERSISTE
 - `docker images`
 - `docker run --name docker-hpchain.ai --rm -d -p 80:80 docker-hpchain.ai
 
+Once in the container, you can
 
+    launch jupyter lab
+    access Jupyter Lab on your host at the following URL: http://127.0.0.1:8888
+    
 # Running the Node
 
     Run cd run-node

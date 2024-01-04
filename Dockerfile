@@ -62,12 +62,14 @@ ADD files/requirements_system.txt /home/$USER_NAME
 # -----------------------------------------------------------------------------
 RUN apt-get update -y -q && \
     apt-get upgrade -y -q && \
-    apt-get -y install curl &&\
-    apt-get -y install gcc &&\
-    apt-get install gnupg && \
-    gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg gpg && \
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+    apt-get -y install curl && \
+    apt-get -y install gcc && \
+    apt-get -y install gnupg && \
+    apt-get -y install software-properties-common && \
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg && \
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
     apt-get update -y -q && \
+    apt-get -y install python3-pyglet && \
     cat /home/$USER_NAME/requirements_system.txt | sed -e 's/#.*//g' | sed -e '/^$/d' | xargs apt-get -y install --fix-missing --fix-broken && \
     apt-get -q clean && \
     apt-get -q autoremove
@@ -79,6 +81,8 @@ RUN apt-get update -y -q && \
 ADD files/jupyter_notebook_config.py /home/$USER_NAME/.jupyter/jupyter_notebook_config.py
 ADD files/requirements.txt /home/$USER_NAME
 ADD files/python_setup.sh /home/$USER_NAME
+ADD files/patch_conda.sh /home/$USER_NAME
+ADD files/constraints.txt /home/$USER_NAME
 
 
 # -----------------------------------------------------------------------------
@@ -88,9 +92,7 @@ RUN mkdir -p $WORK_DIR && \
     chown -R $USER_UID:$USER_GID $WORK_DIR && \
     chown -R $USER_UID:$USER_GID /home/$USER_NAME/ && \
     chown -R $USER_UID:$USER_GID /home/$USER_NAME/.* && \
-    chmod u+x /home/$USER_NAME/*.sh && \
-    su -l $USER_NAME -c "export CUDA_PKG_VERSION=$CUDA_PKG_VERSION; source ~/.profile; source .bashrc; ~/python_setup.sh"
-
+    chmod u+x /home/$USER_NAME/*.sh 
 
 # -----------------------------------------------------------------------------
 #                          Post Install Cleaning
@@ -100,6 +102,7 @@ RUN rm -rf /var/log/* && \
 
 
 WORKDIR $WORK_DIR
+CMD ["/bin/bash", "-c", "source ~/.profile; source ~/.bashrc; /bin/bash" ]
 
 
 

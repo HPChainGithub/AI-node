@@ -70,6 +70,26 @@ RUN apt-get update -y -q && \
     apt-get -q autoremove
 
 # -----------------------------------------------------------------------------
+#                      Import the Python setup files
+# -----------------------------------------------------------------------------
+
+ADD assets/jupyter_notebook_config.py /home/$USER_NAME/.jupyter/jupyter_notebook_config.py
+ADD assets/requirements.txt /home/$USER_NAME
+ADD assets/python_setup.sh /home/$USER_NAME
+
+
+# -----------------------------------------------------------------------------
+#                              Python Setup
+# -----------------------------------------------------------------------------
+RUN mkdir -p $WORK_DIR && \
+    chown -R $USER_UID:$USER_GID $WORK_DIR && \
+    chown -R $USER_UID:$USER_GID /home/$USER_NAME/ && \
+    chown -R $USER_UID:$USER_GID /home/$USER_NAME/.* && \
+    chmod u+x /home/$USER_NAME/*.sh && \
+    su -l $USER_NAME -c "export CUDA_PKG_VERSION=$CUDA_PKG_VERSION; source ~/.profile; source .bashrc; ~/python_setup.sh"
+
+
+# -----------------------------------------------------------------------------
 #                          Post Install Cleaning
 # -----------------------------------------------------------------------------
 RUN rm -rf /var/log/* && \

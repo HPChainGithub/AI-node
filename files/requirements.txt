@@ -51,6 +51,7 @@ keras-tuner
 keras_applications
 keras_preprocessing
 h5py
+python-pyglet
 
 # --- Pytorch ---
 torch

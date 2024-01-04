@@ -32,6 +32,9 @@ To Run your own HPCHAIN AI node, run with Docker
 cd into directory
 
 ```
+sudo chmod 666 /var/run/docker.sock
+
+```
 docker build -t docker-hpchain.ai .
 
 ```

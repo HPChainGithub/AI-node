@@ -37,6 +37,7 @@ ENV export TZ='Europe/Paris'
 ENV LANGUAGE=en_US
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
+ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
 # User configuration (specifying the UID and GID values)
 RUN groupadd -g $USER_GID $USER_NAME && \
@@ -63,10 +64,11 @@ RUN apt-get update -y -q && \
     apt-get upgrade -y -q && \
     apt-get -y install curl &&\
     apt-get -y install gcc &&\
-    curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
-    echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" > /etc/apt/sources.list.d/coral-edgetpu.list && \
+    apt-get install gnupg && \
+    gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg gpg && \
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     apt-get update -y -q && \
-    cat /home/$USER_NAME/requirements.system | sed -e 's/#.*//g' | sed -e '/^$/d' | xargs apt-get -y install --fix-missing --fix-broken && \
+    cat /home/$USER_NAME/requirements_system.txt | sed -e 's/#.*//g' | sed -e '/^$/d' | xargs apt-get -y install --fix-missing --fix-broken && \
     apt-get -q clean && \
     apt-get -q autoremove
 
@@ -74,9 +76,9 @@ RUN apt-get update -y -q && \
 #                      Import the Python setup files
 # -----------------------------------------------------------------------------
 
-ADD assets/jupyter_notebook_config.py /home/$USER_NAME/.jupyter/jupyter_notebook_config.py
-ADD assets/requirements.txt /home/$USER_NAME
-ADD assets/python_setup.sh /home/$USER_NAME
+ADD files/jupyter_notebook_config.py /home/$USER_NAME/.jupyter/jupyter_notebook_config.py
+ADD files/requirements.txt /home/$USER_NAME
+ADD files/python_setup.sh /home/$USER_NAME
 
 
 # -----------------------------------------------------------------------------

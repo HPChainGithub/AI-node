@@ -49,10 +49,6 @@ docker run --runtime=nvidia --rm -it -p 8888:8888 -p 6006:6006 -v <HOST_PERSISTE
 - `docker images`
 - `docker run --name docker-hpchain.ai --rm -d -p 80:80 docker-hpchain.ai
 
-# Apply Docker image on vm instance with Kubenetes (k8s)
-
-- TODO: https://github.com/phattv/sp-evisa/blob/master/k8s/kubenetes.md
-
 
 # Running the Node
 

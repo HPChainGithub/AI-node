@@ -38,7 +38,7 @@ sudo chmod 666 /var/run/docker.sock
 
 ```
 ```
-docker build -t docker-hpchain.ai .
+sudo docker build -t docker-hpchain.ai .
 
 ```
 

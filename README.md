@@ -22,7 +22,7 @@ To Run your own HPCHAIN AI node, run with Docker
 
 ### How to use
 
-The Docker image constains CUDA 12.01.1 and cuDNN 8 for Ubuntu 20.04 and dependecies to run AI jobs.
+The Docker image constains CUDA 12.0.1 and cuDNN 8 for Ubuntu 20.04 and dependecies to run AI jobs with Tensorflow and PyTorch.
 
 1. Optional: Customize the Docker Image
 

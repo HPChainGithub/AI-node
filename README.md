@@ -43,7 +43,8 @@ docker build -t docker-hpchain.ai .
 3. launch a Docker container:
 
 ```
-docker run --runtime=nvidia --rm -it -p 8888:8888 -p 6006:6006 -v <HOST_PERSISTENT_STORAGE_PATH>:/home/docker-ai/projects -u docker-hpchain.ai docker-hpchain.ai
+sudo docker run --gpus all docker-hpchain.ai:latest --rm -it -p 8888:8888
+
 ```
 - (optional) 
 -  hpchain login & choose your account

@@ -13,7 +13,7 @@ To Run your own HPCHAIN AI node, run with Docker
 
 ### Requirements
 
-- Install [Docker](https://docs.docker.com/get-docker/)
+- Install [Docker](https://docs.docker.com/get-docker/) (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 - Install [Postgres](https://www.postgresql.org/)
 - Create an [Infura](https://infura.io/) account
   - Click the `Projects` section and create a new project.
